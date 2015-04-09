@@ -1,0 +1,38 @@
+p {
+	text-align: center;
+}
+
+.details h2 {
+	font-size: 18px;
+}
+
+.details p {
+	text-align: left;
+}
+
+.date {
+
+	float: right;
+}
+
+.button_box {
+	padding-top: 10px;
+}
+
+h3{
+	font-size: 14px;
+}
+
+h3 span{
+	font-weight: normal;
+}
+
+.value {
+	background-color: rgb(221, 221, 221);
+	padding: 5px;
+}
+
+.required {
+	color: red;
+	font-style: italic;
+}
