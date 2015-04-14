@@ -1,12 +1,12 @@
 $(function(){	
 	// button on 
 	$("#booking_info #customer_name").change(function(event) {
-		$("#booking_info .button_box a").removeClass("ui-state-disabled")
+		$("#booking_info .button_box a").removeClass("ui-state-disabled");
 	});
 
 	//on button city list
 	$("#city_list").change(function(event) {
-		$("#city_select .button_box a").removeClass("ui-state-disabled")
+		$("#city_select .button_box a").removeClass("ui-state-disabled");
 	});
 	//check city
 	$(".go_hotel").click(function(){
@@ -22,10 +22,10 @@ $(function(){
 
 	//on button hotel list
 	$("#hotel_list").change(function(event) {
-		$(".pick_hotel .button_box a").removeClass("ui-state-disabled")
+		$(".pick_hotel .button_box a").removeClass("ui-state-disabled");
 	});
 	$("#hotel_list1").change(function(event) {
-		$(".pick_hotel .button_box a").removeClass("ui-state-disabled")
+		$(".pick_hotel .button_box a").removeClass("ui-state-disabled");
 
 	});
 
@@ -63,9 +63,7 @@ $(function(){
 		$("#date_in").mask("00/00/0000");
 		$("#date_out").mask("00/00/0000");		
 	}
-
-
-	});
+});
 
 	//info page confirm and pay
 	$(".next_confirm").click(function(event) {	
@@ -121,25 +119,25 @@ $(function(){
 	});
 
 	// check input phone and card / button on
-	var cardMask = ""
-	var phoneMask = ""
+	var cardMask = "" ;
+	var phoneMask = "" ;
 	
 	var options = { 
   		onComplete: function () {
   			phoneMask = "ok";
-  			if (cardMask != ""){
+  			if (cardMask !== ""){
 	  			chamar();
 	  		}
 		}		
-	}
+	};
 	var checkCard = { 
   		onComplete: function () {
   			cardMask = "ok";
-  			if (phoneMask != ""){
+  			if (phoneMask !== ""){
   				chamar();
   			}
 		}		
-	}
+	};
 	
 	function chamar(){
 		if (phoneMask == "ok" && cardMask == "ok"){
@@ -149,5 +147,5 @@ $(function(){
 
 	//mask
 	$("#customer_phone").mask("(00) 0000-0000" , options);
-	$("#customer_card").mask("0000-0000-0000-0000" , checkCard)
+	$("#customer_card").mask("0000-0000-0000-0000" , checkCard); 
 });
